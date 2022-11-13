@@ -42,10 +42,10 @@ galleryEl.addEventListener('click', onClick);
 
 if ('loading' in HTMLImageElement.prototype) {
   console.log('Підтримує loading');
-  // const lazyimgs = document.querySelectorAll('img[loading = "lazy"]');
-  // lazyimgs.forEach(img => {
-  //   img.src = img.dataset.src;
-  // }); 
+  const lazyimgs = document.querySelectorAll('img[loading = "lazy"]');
+  lazyimgs.forEach(img => {
+    img.src = img.dataset.src;
+  }); 
 }
 else{
   console.log('Не підтримує loading');
